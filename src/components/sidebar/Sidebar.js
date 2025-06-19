@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MdSearch } from "react-icons/md";
 // chakra imports
 import {
   Box,

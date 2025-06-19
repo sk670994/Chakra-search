@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MySearchInput from "views/MySearchInput";
+import { MdSearch } from "react-icons/md";
 import { Icon } from '@chakra-ui/react';
 import {
   MdBarChart,
@@ -18,7 +20,6 @@ import RTL from 'views/admin/rtl';
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
-
 const routes = [
   {
     name: 'Main Dashboard',
@@ -70,6 +71,18 @@ const routes = [
     icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
     component: <RTL />,
   },
+
+  {
+    name: "My Search Input",
+    layout: "/admin",
+    path: "/my-search-input",
+    component: <MySearchInput/>,
+  },
+
+
+
 ];
+
+
 
 export default routes;
